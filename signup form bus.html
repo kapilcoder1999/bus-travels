@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form BUS</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .maindiv{
+            width: 100%;
+            min-height: 50rem;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            background-image: url("hd images/BUS\ IMG5.jpg");
+            opacity: 0.8;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+            width: 100%;
+            min-height: 5rem;
+            border: 2px solid transparent ;
+            box-sizing: border-box;
+           
+        }
+        .imagelogo{
+            width: 10rem;
+            margin-left: 2rem;
+            border: 2px solid black;
+            border-radius: 50%;
+            
+        }
+        .header h1{
+            font-size: 2.3rem;
+            position: absolute;
+            top: 0rem;
+            left: 15rem;
+            letter-spacing: 1rem;
+            text-transform: capitalize;
+            color: blue;
+
+        }
+       
+        .headinganimation{
+            width: 70%;
+            min-height: 10rem;
+            border: 2px solid transparent;
+            margin-left: 30rem;
+            background-color: transparent;
+           
+           
+           
+        }
+        .headinganimation div{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 3rem ;
+            letter-spacing: 2rem;
+            margin-left: 30rem;
+            text-transform:lower;
+           color: #fff;
+            animation-name: heading;
+            animation-duration: 6s;
+            animation-iteration-count:infinite;
+            animation-delay:0s;
+            animation-timing-function:ease-in-out;
+
+        }
+        @keyframes heading{
+            from{
+                  transform: translate(45rem,-4rem);
+                  
+            }
+            to{
+                transform: translate(-20rem,3rem);
+                background-image: url("hd images/bus_logo-1.png");
+                background-position:center;
+                background-size:20rem;
+                background-repeat: no-repeat;
+            }
+        }
+        .loginheading{
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-weight: 500;
+            text-align: center;
+        }
+        .content-Form{
+            width: 50rem;
+           min-height: 50rem;
+            margin-left: 50rem;
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-image: url("hd images/BUS\ IMG7.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-left:4rem ;
+        }
+        .content-Form input{
+             font-size: 2rem;
+             border: 2px solid blck;
+             border-radius: 1rem;
+             margin-top: 3rem;
+             padding: 2rem;
+            
+        }
+        .content-Form label{
+           margin-left: 2rem;
+            font-size: 2rem;
+            text-transform: lowercase;
+            font-weight: 600;
+           
+        }
+        .check{
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .button{
+            margin-left: 7rem;
+            width: 10rem;
+            margin-top: 2rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="header">
+            <img src="hd images/bus_logo-1.png" class="imagelogo">
+            <h1>safal bus</h1>
+        </div>
+        <form class="loginform">
+            <div class="headinganimation">
+         <div>
+            <h1>s</h1>
+            <h2>a</h2>
+            <h3>f</h3>
+            <h4>a</h4>
+            <h5>l</h5>
+            <h6>B</h6>
+            <h7>u</h7>
+            <h8>s</h8>
+        </div>
+        </div>
+        <div class="content-Form">
+            
+            <h2 class="loginheading">signup Here</h2>
+            <label>fullname</label><br>
+            <input type="text" placeholder="enter your name" required><br><br><br>
+
+            <label> date of birth</label><br>
+            <input type="date" placeholder="enter birth date" required><br>><br><br>
+
+            <label>make password</label><br>
+            <input type="password" placeholder="password" required><br>><br><br>
+
+            <label>confirm password</label><br>
+            <input type="password" placeholder="password" required><br>><br><br>
+
+            
+            <input type="submit" value="submit" class="button">
+
+        </div>
+
+        </form>
+    </div>
+</body>
+</html>

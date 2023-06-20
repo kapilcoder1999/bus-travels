@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>bus project using basic html5 and css</title>
+   <script src="bus project javascript.js"></script>
+   <script src="jquery.js"></script>
+   
+   <style>
+      html{
+         font-size: 10px;
+         overflow: auto;
+         width: 100%;
+         height: 100%;
+         margin: 0%;
+         padding: 0%;
+         overflow-x: hidden; 
+        
+      }
+      .maindiv{
+         width: 100%;
+         height: 20%;
+      
+         min-height: 12rem;
+        
+         box-sizing: border-box;
+         position:sticky;
+         background-color:whitesmoke;
+      }
+      .ullist li{
+         display: inline-flex;
+         font-size: 2rem;
+         position: relative;
+         top: -1rem;
+         text-transform: capitalize;
+         float: right;
+         padding: 2rem;
+      }
+      
+      .ullist li a{
+         text-decoration: none;
+         color:blue;
+         transition:text-decoration 1s , color 1s, font-weight 1s;
+      }
+      .ullist li a:hover{
+         text-decoration:underline;
+         color: black;
+         font-weight: 600;
+         
+      }
+      .namesafalbus{
+         text-transform: capitalize;
+         line-height: 1rem;
+         position: relative;
+         left: 11rem;
+         top: 1rem;
+         font-size: x-large;
+         letter-spacing: 1rem;
+         color:blue;
+      }
+   
+    .img1{
+      position:absolute;
+      left: 1rem;
+      top: -1rem;
+      width: 10rem;
+      cursor: pointer;
+    }
+    .maindiv2{
+      width: 100%;
+      min-width:400px;
+      min-height: 40rem;
+      box-sizing: border-box;
+      background-image:url("hd images/BUS\ IMG3.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.7;
+      
+    }
+    .form{
+      width:30%;
+      border: 2px solid ;
+     
+      border-radius: 2rem;
+      min-height: 20rem;
+      padding: 3rem;
+      position: relative;
+      top: 4rem;
+      float: right;
+      font-size: 4rem;
+   }
+   .form input{
+      font-size: 2rem;
+      border-radius: 1rem;
+      background-color:whitesmoke;
+   }
+   .namesearchbus{
+      text-align: center;
+      border-radius: 3rem;
+      background-color: azure;
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: capitalize;
+   }
+   .maindiv3{
+      width: 100%;
+      min-height: 45rem;
+      box-sizing: border-box;
+      overflow-x: scroll;
+      background-image: url("hd images/bg\ art.jpg");
+      background-size:contain;
+      background-position:center;
+      
+   }
+   .mobappimg{
+      width: 30rem;
+      min-height: 20rem;
+      float: left;
+   }
+   .textformat{
+    width: 30rem;
+    float: right;
+    font-size:1.7rem;
+    margin-right: 10rem;
+    
+ }
+ .mobilenumber{
+   font-size: 2rem;
+   border-radius: 3rem;
+ }
+ .appheading{
+   font-size: 3rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   
+   color:black; 
+ }
+ .appdownload{
+   position: relative;
+   top: 4rem;
+   
+   
+ }
+ .appdownload a{
+   font-size: 4rem;
+   margin-left: 1rem;
+   color:black;
+   font-weight:400 ;
+   
+}
+.appdownload a:hover{
+   color:darkorchid;
+  
+}
+.maindiv4{
+   width: 100%;
+   min-height: 45rem;
+   box-sizing: border-box;
+   background-color: white;
+  
+  
+}
+.subdiv4{
+  text-align: center;
+   font-size: 1.6rem;
+   margin-top: 0rem;
+}
+.img{
+   width: 15rem;
+   margin-top: 1rem;
+   border: 2px solid black;
+   border-radius: 50%;
+   cursor:not-allowed;
+}
+.contentdiv{
+   width: 100%;
+   overflow: auto;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   display: inline-flex;
+   justify-content: center;
+   padding: 2rem;
+}
+
+.firstdiv{
+   width:30rem;
+   min-height: auto;
+   border: 2px solid black;
+   border-radius: 10rem;
+   box-sizing: border-box;
+   padding: 2rem;
+   margin-left:1rem;
+   transition: all 0.7s;
+}
+.firstdiv:hover{
+   box-shadow:-2rem 1rem 3rem 0.2rem black;
+   border-radius: 20%;
+   transform: skew(1deg);
+   color:black;
+}
+.seconddiv{
+   width:30rem;
+   min-height: auto;
+   border: 2px solid black;
+   border-radius: 10rem;
+   box-sizing: border-box;
+   padding: 1rem;
+   margin-left: 20rem;
+   transition: all 0.7s;
+}
+.seconddiv:hover{
+   box-shadow:-2rem 1rem 3rem 0.2rem black;
+   border-radius: 20%;
+   transform: skew(1deg);
+   color:black;
+}
+.thirddiv{
+   width:30rem;
+   min-height: auto;
+   border: 2px solid black;
+   border-radius: 10rem;
+   box-sizing: border-box;
+   padding: 1rem;
+   margin-left: 20rem;
+   transition: all 0.7s;
+}
+.thirddiv:hover{
+   box-shadow:-2rem 1rem 3rem 0.2rem black;
+   border-radius: 20%;
+   transform: skew(1deg);
+   color:black;
+}
+.contentdiv img{
+   width: 10rem;
+   border: 2px solid black;
+   border-radius: 50%;
+   
+   padding: 2rem;
+   margin-left:6.7rem;
+   
+}
+.contentdiv h1 {
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 3rem;
+
+}
+.contentdiv p{
+   text-align: center;
+   font-weight: 400;
+   font-size: 1.7rem;
+}
+.maindiv5{
+   width: 100%;
+   min-height: 45rem;
+   box-sizing: border-box;
+   background-color: white;
+}
+.flags{
+   width: 100%;
+   min-height: auto;
+   border: 2px solid transparent;
+   display: inline-flex;
+  overflow-x: auto;
+   margin: 0rem;
+   padding: 1rem;
+   box-sizing: border-box;
+}
+.flags img{
+   width: 17rem;
+   height:15rem;
+   margin-left: 25rem;
+   box-sizing: border-box;
+   padding: 1rem;
+   
+}
+.flags h5{
+   font-size: 2rem;
+   text-align: center;
+  
+   margin-left: 25rem;
+   text-transform: capitalize;
+
+}
+.flags2{
+   width: 100%;
+   min-height: auto;
+   display: inline-flex;
+   margin: 0rem;
+   box-sizing: border-box;
+   overflow: auto;
+   padding: 1rem;
+}
+.flags2 img{
+   width: 17rem;
+   height:15rem;
+   margin-left: 25rem;
+   box-sizing: border-box;
+   padding: 1rem;
+}
+.flags2 h5{
+   font-size: 2rem;
+   text-align: center;
+   margin-left: 25rem;
+   
+   text-transform: capitalize;
+}
+.flags a{
+   text-decoration: none;
+   color: black;
+}
+.flags2 a{
+   text-decoration: none;
+   color:black;
+}
+.maindiv5 h1{
+   font-size: 3rem;
+   text-transform: capitalize;
+   text-align: center;
+   margin-left: 3rem;
+   padding: 1rem;
+}
+.globeimg{
+   margin-top: 3rem;
+   width: 7rem;
+   margin-left: 48%;
+   padding: 1rem;
+   border: 2px solid black;
+   border-radius: 50%;
+   cursor: not-allowed;
+}
+.maindiv6{
+   width: 100%;
+   min-width: 40rem;
+   min-height: 40rem;
+   box-sizing: border-box;
+   border: 2px solid transparent;
+   background-color:whitesmoke;
+   overflow: auto;
+}
+.maindiv6 div{
+   display: inline-flex;
+   margin-left: 15rem;
+   width: 30rem;
+   min-height: 10rem;
+   
+   padding-top:2rem;
+   position: relative;
+   
+
+}
+.maindiv6 span{
+   font-size: 2rem;
+   margin-left: 5rem;
+   text-transform: capitalize;
+}
+.maindiv6 p{
+   margin-left: -4rem;
+}
+.maindiv6 h1{
+   font-size: 3rem;
+   text-align: center;
+   margin-left: 8rem;
+   text-transform: capitalize;
+}
+.maindiv6 img{
+   width: 8rem;
+   padding: 1rem;
+   border: 2px solid black;
+   border-radius: 50%;
+   margin-left: 50%;
+   cursor: not-allowed;
+}
+.maindiv6 h2{
+   color: red;
+}
+.maindiv7{
+   width: 100%;
+   min-width: auto;
+   min-height: 40rem;
+   box-sizing: border-box;
+   background-color:black;
+   overflow: auto;
+}
+.footerdiv{
+   display: inline-flex;
+   font-size: 2rem;
+   font-weight: 300;
+   margin-left:10rem;
+   border: 2px solid black;
+   width: 90%;
+   min-height: auto;
+   
+   
+}
+.footerdiv div {
+   margin-left: 5rem;
+   text-transform: capitalize;
+   
+}
+.footerdiv a{
+   text-decoration: none;
+   color: white;
+}
+.footerdiv h3{
+   color:darkgray;
+}
+.footerdiv5 p{
+   color: white;
+   text-transform: lowercase;
+   
+}
+.footerdiv5 img{
+   width: 20rem;
+   border: 2px solid white;
+   border-radius: 50%;
+   margin-left: 20rem;
+}
+.h3heading{
+   font-size: 4rem;
+   letter-spacing: 2rem;
+   text-align: end;
+   padding: 3rem;
+   margin-top: -3rem;
+}
+.iconsdiv{
+   font-size: 4rem;
+   padding-left: 20rem;
+   color: white;
+   margin-left: 30rem;
+
+}
+.heading5{
+   color: white;
+   font-size: 2rem;
+   margin-top: 4rem;
+   margin-left: 25rem;
+}
+.paragraph{
+   margin-left: 20rem;
+}
+
+   </style>
+</head>
+<body>
+   <div class="maindiv">
+      <div>     
+       <ul class="ullist">
+         <li><a href="signup form bus.html">signup</a></li>
+         <li> <a href="#form">bus status</a></li>
+         <li><a href="https://www.busonlineticket.com/" target="_blank"> book your tickets</a></li>
+         <li><a href="login form  bus project.html" target="_blank">login</a></li>
+         <li><a href="">home</a></li>
+       </ul>
+       <img src="HD IMAGES/bus_logo-1.png" class="img1">
+       <h2 class="namesafalbus">safal bus</h2>
+      </div>
+      
+   </div>
+   <div class="maindiv2">
+      <fieldset class="form">
+      <table>
+        <a name="form">
+         <form id="bus-form">
+           
+               <legend class="namesearchbus">            
+            search bus
+             </legend>
+
+         <tr>
+            <td><input type="text" placeholder="from" list="fromlist" autocomplete="fromlist" id="from" name="from">
+               <datalist id="fromlist">
+                 <option value="pune">
+                  <option value="nagpur">
+                         <option value="nashik">
+                         <option value="mumbai">
+                          <option value="kolhapur">
+                           <option value="amravati">
+                           <option value="shegao">
+                           <option value="shirdi">
+                            <option value="yavatmal">
+
+                       
+               </datalist>
+            
+            </td>
+            
+         </tr>
+         <tr>
+            <td><input type="text" placeholder="to" list="tolist" autocomplete="tolist" id="to" name="to">
+            <datalist id="tolist">
+               <option value="pune">
+                  <option value="nagpur">
+                         <option value="nashik">
+                         <option value="mumbai">
+                          <option value="kolhapur">
+                           <option value="amravati">
+                           <option value="shegao">
+                           <option value="shirdi">
+                            <option value="yavatmal">
+            </datalist></td>
+         </tr>
+         <tr>
+            <td><input type="date" id="date"></td>
+         </tr>
+         <tr>
+            <td><input type="button" value="search" ></input></td>
+         </tr>
+         </form>
+      </a>
+      
+   
+      </table>
+   </fieldset>
+   </div>
+   
+   <div class="maindiv3">
+      <div>
+         <img src="HD IMAGES/bus mob app.png" class="mobappimg">    
+        <div class="appdownload" >
+         <h3 class="appheading">download<br> application</h3>
+        <a href="#"><i class="fa-brands fa-google-play"></i></a> 
+        <a href="#"><i class="fa-brands fa-windows"></i></a> 
+        <a href="#"><i class="fa-brands fa-linux"></i></a>
+        </div>
+         
+      <div class="textformat">
+         <h1 class="heading">CONVENIENCE ON-THE-GO.</h1>
+         <p>
+            Enjoy the following exclusive features on the SafalBus app
+            Last Minute Booking - In a hurry to book a bus at the last minute? Choose the bus passing from your nearest boarding point and book in a few easy steps.
+            Boarding Point Navigation - Never lose your way while travelling to your boarding point!
+            Comprehensive Ticket Details- Everything that you need to make the travel hassle free - rest stop details, boarding point images, chat with co-passengers, wake-up alarm and much more!
+            Enter your mobile number below to download the SafalBus mobile app.
+         </p>
+          <input type="text" placeholder="enter mobile no." class="mobilenumber">
+         </div>
+         </div>
+   </div>
+
+   <div class="maindiv4">
+      <div class="subdiv4">
+      <img src="HD IMAGES/trust img.png" class="img" >
+      <span><h1>we promise to deliver</h1></span>
+      </div>
+
+     <div class="contentdiv">
+         <div class="firstdiv">
+            <img src="hd images/gisfts image.png">
+            <h1>unexpected benefits</h1>
+            <p>We take care of your travel beyond ticketing by providing you with innovative and unique benefits.</p>
+         </div>
+
+         <div class="seconddiv">
+            <img src="hd images/customer service image.jpg">
+            <h1>SUPERIOR CUSTOMER SERVICE</h1>
+            <p>We put our experience and relationships to good use and are available to solve your travel issues.</p>
+         </div>
+
+         <div class="thirddiv">
+            <img src="hd images/ruppes image.jpg">
+            <h1>LOWEST PRICES</h1>
+            <p>We always give you the lowest price with the best partner offers.
+            </p>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="maindiv5">
+      <img src="hd images/globe image.jpg" alt="globe image" class="globeimg" >
+      <h1>our global presence </h1>
+
+      <div class="flags">
+
+      <div class="india">
+      <a href="#" ><img src="HD IMAGES/indian flag images.jpg" alt="flag image">
+      <h5>india</h5></a>
+     </div>
+
+     <div class="srilanka">
+      <a href="#"><img src="HD IMAGES/srilanka flag image.jpg" alt="flag image">
+      <h5>srilanka</h5></a>
+     </div>
+
+     
+    
+     <div class="singapore">
+      <a href="#"><img src="HD IMAGES/singapore flag image.jpg" alt="flag image">
+      <h5>singapore</h5></a>
+     </div>
+   </div>
+
+     <div class="flags2">
+     <div class="malysia">
+      <a href="#"><img src="HD IMAGES/malysia flag image.jpg" alt="flag image">
+      <h5>malysia</h5></a>
+     </div>
+      
+
+     <div class="canada">
+      <a href="#"><img src="HD IMAGES/canada flag image.jpg " alt="flag image">
+      <h5>canada</h5></a>
+     </div>
+     
+
+     <div class="colombia">
+      <a href="#"><img src="HD IMAGES/colombia flag image.jpg " alt="flag image">
+      <h5>colombia</h5></a>
+     </div>
+
+
+
+      </div>
+   </div>
+
+   <div class="maindiv6">
+      <img src="hd images/growth image.jpg">
+      <h1>the numbers are growing</h1>
+      <div class="ratingdiv1">
+         <span><h5>customers</h5>
+         <h2>36 M</h2>
+         <p>Safalbus is trusted by over 36 million happy customers
+             globally</p></span>
+      </div>
+
+      <div class="ratingdiv2">
+         <span><h5>operators</h5>
+         <h2>35000 </h2>
+         <p>network of over 3500 bus operators worldwide</p></span>
+      </div>
+
+      <div class="ratingdiv3">
+       <span><h5>bus ticket</h5>
+         <h2>220 + M </h2>
+         <p>Over 220 million trips booked using Safalbus</p></span>  
+      </div>
+   </div>
+
+   <footer class="maindiv7">
+
+      <div class="footerdiv">
+      <div class="footerdiv1">
+         <ul>
+           <h3>about SafalBus</h3>
+           <a href="about us bus project.html" target="_blank"><li>about us</li></a>
+           <a href="#"><li>contact us</li></a>
+           <a href="#"><li>mobile version</li></a>
+           <a href="#"><li>sitemap</li></a>
+           <a href="#"><li>offers</li></a>
+           <a href="#"><li>careers</li></a>
+           <a href="#"><li>values</li></a>
+         </ul>
+      </div>
+
+      <div class="footerdiv2">
+         <ul>
+             <h3>info</h3>
+            <a href="T and C bus project.html" target="_blank"><li> T & C</li></a>
+            <a href="privacy policy bus project.html" target="_blank"><li>privacy policy</li></a>
+            <a href="#"><li>FAQ</li></a>
+            <a href="#"><li>blog</li></a>
+            <a href="#"><li>bus operator registration</li></a>
+            <a href="#"><li>agent registration</li></a>
+            <a href="#"><li>insurance partner</li></a>
+         </ul>
+      </div>
+
+      <div class="footerdiv3">
+         <ul>
+            <h3>global sites</h3></a>
+            <a href="#"><li> india</li></a>
+            <a href="#"><li>srilanka</li></a>
+            <a href="#"><li>singapore</li></a>
+            <a href="#"><li>malaysia</li></a>
+            <a href="#"><li>canada</li></a>
+            <a href="#"><li>colombia</li></a>
+         </ul>
+      </div>
+
+      <div class="footerdiv4">
+         <ul>
+            <h3>our partners</h3></a>
+            <a href="https://www.goibibo.com/flights/?utm_source=bing&utm_medium=cpc&utm_campaign=DF-Brand-EM&utm_adgroup=Only%20Goibibo&utm_term=!SEM!DF!B!Brand!RSA!150035352!1211662109442708!!e!goibibo!c!&msclkid=25816f9f55121df3b6470b8af445a55e" target="_blank"><li> goibibo</li></a>
+            <a href="https://www.makemytrip.com/flights/?cmp=SEM|M|DF|B|Brand|B_M_Makemytrip_Search_Exact|Brand_Top_5_Exact|Expanded|&s_kwcid=AL!1631!3!!e!!o!!makemytrip&ef_id=4f23c989efb01e95c8a5ad9c4e14ac06:G:s " target="_blank"><li>makemytrip</li></a>
+            
+
+            <h3>other services</h3>
+            <a href="https://www.ixigo.com/trains?utm_source=bing&utm_medium=paid_search_bing_trains&utm_campaign=train_search_desktop_bing&msclkid=5c39b0e1b86f17e0f4d9d4f4198844c0&utm_term=train%20ticket%20booking&utm_content=Ad%20group%201" target="_blank"><li>train tickets</li></a>
+            <a href="https://www.redbus.in/"><li>bus hire</li></a>
+            <a href="https://www.booking.com/index.html?aid=393655&label=msn-5v4p76R4b4u2dySli_cXGQ-80195629674452:tikwd-17155438432:loc-90:neo:mtp:lp157110:dec:qscab%20booking&utm_campaign=English%20EN%20ROW-CAUS&utm_medium=cpc&utm_source=bing&utm_term=5v4p76R4b4u2dySli_cXGQ&msclkid=41156e6e63cc1830ee4a0a7bc18ac8d8" target="_blank"><li>cab booking</li></a>
+            <a href="https://rvshare.com/?semid=bing.nb&placement=o&campid=307192282&adgid=1298523290005539&keyword=p.rv%20rentals&copyid=81157769341332&kwd-81157948373466:loc-90&device=c&loc_physical=157110&loc_interest=&camptype=search&msclkid=7908aff168f31e3fdc7dcbe4ca792ef7&utm_source=bing&utm_medium=cpc&utm_campaign=Generic%20Keywords&utm_term=rv%20rentals&utm_content=Generic%3ARVs" target="_blank"><li>tempo traveller</li></a>
+         </ul>
+      </div>
+
+      <div class="footerdiv5">
+         <img src="hd images/bus_logo-1.png">
+         <h3 class="h3heading">SafalBus</h3>
+         <p class="paragraph">SafalBus is the world's largest online bus ticket booking service trusted by over 25 million happy customers globally. 
+            SafalBus offers bus ticket booking through its website,
+            iOS and Android mobile apps for all major routes.</p>
+             
+            <div class="iconsdiv">
+           <a href="" onclick="icons1()"><i class="fa-brands fa-facebook"></i></a> 
+           <a href="" onclick="icons2()"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="" onclick="icons3()"><i class="fa-brands fa-twitter"></i></a>
+            
+            </div>
+            <h5 class="heading5">Ⓒ 2023 ibibogroup All rights reserved</h5>
+           
+      </div>
+   </div>
+   </footer>
+</body>
+
+
+</html>
